@@ -17,7 +17,7 @@ echo "01, 02, 03, 04, 05"
 read levelnumber
 
 time ./gameloop.sc $levelnumber
-diff -q answerlevel01 templevel
+diff -q answerlevel03 templevel
 echo ""
 echo "**********************"
 
