@@ -1,12 +1,10 @@
 #!/bin/bash
 
-#have the game level file 
-#have the "answer file"
-#open the game file
-#pause until the game file is saved and closed
-#check the game file against the answer file
-#display if files match
-#show time
+
+#todays goals:
+#level select
+#single file for levels and answers
+#load test into temp test before every game
 
 
 
@@ -17,7 +15,7 @@ echo "01, 02, 03, 04, 05"
 read levelnumber
 
 time ./gameloop.sc $levelnumber
-diff -q answerlevel03 templevel
+diff -q tempanswers templevel
 echo ""
 echo "**********************"
 

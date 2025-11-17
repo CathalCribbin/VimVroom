@@ -1,0 +1,13 @@
+#!/bin/bash
+#Handles checking for errors between tempfile(edited) and tempanswers
+
+
+
+
+
+
+
+diff -q tempanswers tempfile
+
+
+

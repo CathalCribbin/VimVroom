@@ -2,12 +2,16 @@
 #contains main game loop that will be timed
 
 
+read -d '' -a linenumbers <<< "$(awk "/Level$1/ {print NR}" levelselect)"
 
 
-cp level03 templevel
+sed -n "$((${linenumbers[0]}+2)),$((${linenumbers[1]}-2))p" levelselect > tempanswers 
+
+
+sed -n "$((${linenumbers[1]}+2)),$((${linenumbers[2]}-2))p" levelselect > templevel
+
+
 vim templevel
-echo "hit enter! $1 was the level number"
-read hitenter
 
 
 
